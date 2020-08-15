@@ -11,13 +11,15 @@
 </head>
 
 <body>
-    <div></div>
-    <canvas id="canvas"></canvas>
+    <div class="canvas"></div>
+    <canvas id="canvas" width="100" height="100"></canvas>
     <script>
         let canvas = document.getElementById('canvas');
         let ctx = canvas.getContext('2d');
         canvas.width = document.documentElement.clientWidth;
         canvas.height = document.documentElement.clientHeight;
+        console.log(canvas.width);
+        console.log(canvas.height);
         ctx.fillStyle = "black";
         ctx.strokeStyle = 'black';
         ctx.lineWidth = 8;
